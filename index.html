@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Berto's Blog</title>
+    <script src="https://kit.fontawesome.com/213651151b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <img src="image/logo.png" class="logo">
+            </nav>
+        </div>
+    </header>
+     
+     <div class="header">
+         <div class="container">
+             <div class="header-text">
+             <h1>Berto's Blog</h1>
+         <p>Gilbert E. Venida</p>
+         </div>
+         </div>
+     </div>
+     <!--------- Start About ---------->
+     <div id="about">
+         <div class="container">
+             <div class="row">
+                 <div class="col">
+                     <img src="image/user.png" >
+                 </div>
+                 <div class="col2">
+                     <h1 class="about-text">Who is Gilbert?</h1>
+                         <p>Gilbert Venida is an ordinary individual who aspires to become a programmer someday and be the CEO of his own company. He also has an interest in movies, music, and online games. The genres he often listens to are OPM and POP rock. His favorite band is 5 Seconds of Summer, and his favorite artist is Bruno Mars. When it comes to movies, he prefers romantic, action, and thriller genres. In gaming, he enjoys playing FPS games and MOBA games. He dreams of becoming a streamer and a professional ML player.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <!------ Hobbies ------>
+     <div id="hobby">
+         <div class="container">
+             <h1 class="about-text">Hobbies</h1>
+             <figure>
+                 <img src="image/hobby1.jpeg">
+                 <img src="image/hobby2.jpeg">
+                 <img src="image/hobby3.jpeg">
+                 <img src="image/hobby4.jpeg">
+             </figure>
+         </div>
+     </div>
+     <!-------Timeline--------->
+     <div id="timeline" class="timeline-container">
+         <div class="container">
+             <h1 class="about-text">Timeline</h1>
+         </div>
+         
+         
+         <div class="timeline">
+             <div class="timeline-item" data-text="Born">
+              <div class="timeline-content">
+                  <img src="image/t1.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2002</h2>
+                  
+                  <p class="timeline-content-disc">Gilbert Venida was born on October 13, 2002, in the city of Daet, Camarines Norte. He is the fifth child of his parents, Vergilio Venida and Amelia Venida.</p>
+              </div>   
+             </div>
+             
+             
+             <div class="timeline-item" data-text="10 YEARS OLD">
+              <div class="timeline-content">
+                  <img src="image/t3.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2012</h2>
+                  
+                  <p class="timeline-content-disc">In 2012, they were traveling with his parents for his check-up at the Philippine General Hospital in Manila using only their motorcycle.</p>
+              </div>   
+             </div>
+             
+             
+             
+             <div class="timeline-item" data-text="14 YEARS OLD">
+              <div class="timeline-content">
+                  <img src="image/t2.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2014</h2>
+                  
+                  <p class="timeline-content-disc">In the year 2014, his older sister Majang and his siblings Albert, Eric, and Tope went to Manila to celebrate Christmas and New Year there.</p>
+              </div>   
+             </div>
+             
+             <div class="timeline-item" data-text="ALTAR SERVER">
+              <div class="timeline-content">
+                  <img src="image/t5.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2016</h2>
+                  
+                  <p class="timeline-content-disc">In the year 2016, Gilbert became a sacristan at the Parish of St. John the Baptist in the Diocese of Daet. He underwent a year-long training to be able to wear a cassock.
+                  </p>
+              </div>   
+             </div>
+             
+             
+             <div class="timeline-item" data-text="HIGH SCHOOL">
+              <div class="timeline-content">
+                  <img src="image/t4.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2018</h2>
+                  
+                  <p class="timeline-content-disc">In the year 2018, Gilbert was an eighth-grade high school student at Camarines Norte National High School. On that day, Gilbert and his friends had planned to have pansit canton as their lunch at his place in Barangay Urbano, Daet, Camarines Norte.</p>
+              </div>   
+             </div>
+             
+             
+             <div class="timeline-item" data-text="NEPHEW BIRTHDAY">
+              <div class="timeline-content">
+                  <img src="image/t6.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2019</h2>
+                  
+                  <p class="timeline-content-disc">In the year 2019, his parents and siblings went to their first niece's birthday celebration. It was also the day when the spouse of his older sister Majang proposed.</p>
+              </div>   
+             </div>
+             
+             
+             <div class="timeline-item" data-text="COLLEGE">
+              <div class="timeline-content">
+                  <img src="image/t7.jpg"  class="timeline-img">
+                  
+                  <h2 class="timeline-content-title">2023</h2>
+                  
+                  <p class="timeline-content-disc">This year, Gilbert is currently studying in college at Cavite State University in Indang, Cavite. He is taking up Bachelor of Science in Information Technology and is currently in his second year of college.</p>
+              </div>   
+             </div>
+             
+             
+         </div>
+     </div>
+     
+     <footer>
+        <div>
+            <nav>
+                <img src="image/logo.png" class="logo">
+            </nav>
+        </div>
+    </footer>
+     
+     <!---------Script---------->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    (function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline-img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline").timeline();
+ </script>
+     
+</body>
+</html>
